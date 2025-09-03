@@ -1,5 +1,5 @@
 import { randomUUID } from "node:crypto";
-import { readDB, writeDB } from "../utils/database.mjs";
+import { readDB, writeDB } from "../../utils/database.mjs";
 
 export const createTask = (router) => {
   router.post("/api/tasks", async (req, res) => {
